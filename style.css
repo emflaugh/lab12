@@ -1,0 +1,128 @@
+body {
+  font-family: font151474, Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #FCF9E2;
+  color: #4d4d4d;
+  margin: 0 auto;
+}
+h1 {
+	font-size: 100px;
+	font-weight: lighter;
+	text-align: center;
+	color: rgba(114, 140, 114, 0.70);
+}
+li {
+  list-style: none;
+  text-align: left;
+  padding: 12px 0px 12px 0px;
+  display: block;
+  line-height: 1.2;
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+}
+#todoForm {
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+margin: 0 auto;
+border: 5px outset lightgrey;
+border-radius: 3px;
+width: 50%;
+background-color: #f5f5f5;
+}
+.userInput {
+  padding: 12px 32px 12px 12px;
+  display: inline-block;
+  margin: 0 auto;
+  width: 76%;
+  height: 30px;
+  font-size: 30px;
+  color: #4d4d4d;
+  font-weight: lighter;
+  border-radius: 3px;
+}
+.search {
+  background-image: url('searchicon.png');
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 0px 12px 45px;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 30px;
+  font-size: 30px;
+  color: #4d4d4d;
+  font-weight: lighter;
+  border-radius: 3px;
+}
+#addButton {
+  display: inline-block;
+  height: inherit;
+  padding: 12px 30px 6px 28px;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(114, 140, 114, 0.9);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px #999;
+}
+#addButton:hover {
+  background-color: #3e8e41
+}
+#addButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+#deleteButton {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: lighter;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(184, 126, 126, 0.9);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px #999;
+}
+#deleteButton:hover {
+  background-color: rgba(207, 21, 21, 0.9);
+}
+#deleteButton:active {
+  background-color: rgba(207, 21, 21, 0.9);
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+/*Media Query's for Responsive Design*/
+@media only screen and (max-width: 375px) {
+li {font-size: 20px;}
+.userInput {width: 95%;}
+#addButton {width: 95%; margin-top: 10px;}
+.search {width: 95%}
+}
+
+@media only screen and (max-width: 782px) {
+li {font-size: 20px;}
+#todoForm {width: 72%;}
+.userInput {width: 72%;font-size: 20px;}
+#addButton {width: 95%;font-size: 20px;}
+.search {width: 60%;font-size: 20px;}
+}
+@media only screen and (max-width: 1350px) {
+li {font-size: 20px;}
+#todoForm {width: 72%;}
+.userInput {width: 72%;}
+#addButton {width: 72%;}
+.search {width: 72%;}
+}

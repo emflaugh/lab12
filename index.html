@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="toDo">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://www.fontify.me/wf/62195c4f85f04ffb98ddc7dc5d36d227" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+  </head>
+  <body ng-controller="toDoCtrl">
+
+    <h1>To Do's</h1>
+    <form id="todoForm">
+      <input class="userInput" type="text" ng-model="listItem.info" placeholder="What needs to be done?">
+        <button id="addButton" type="button" ng-click="addToDo(listItem)">Add</button>
+          <ul>
+            <li type="checkbox" ng-repeat="listItem in list | filter: search"><button id="deleteButton" type="button" ng-click="removeToDo(listItem)">Done</button> {{ listItem.info }} </li>
+          </ul>
+      <input class="search" type="text" ng-model="search" placeholder="Search">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
